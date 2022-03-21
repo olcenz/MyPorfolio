@@ -1,0 +1,161 @@
+:root{
+    --dark-navy: #01010f;
+    --white: #ffff;
+    --light-gray: #a8a8a8;
+    --light-navy: #020721;
+    --cyan: #00bcc9;
+
+    --primary-font: 'Source Sans Pro', sans-serif;;
+    --secondary-font: 'Bangers', cursive;
+    --third-font: 'League Gothic', sans-serif;
+    --fourth-font: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.padding-0{
+    padding: 0 !important;
+}
+
+.slide-action button{
+    padding: 1vw 4px !important;
+}
+
+i.hidden{
+    display: none;
+}
+
+/* Display */
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.col-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.col-6{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+.block{
+    display: block;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+.underline{
+    text-decoration: underline;
+}
+
+/* font primary */
+.font-primary{
+    font-family: var(--primary-font);
+}
+/* font secondary */
+.font-secondary{
+    font-family: var(--secondary-font);
+}
+/* font third */
+.font-third{
+    font-family: var(--third-font);
+}
+
+/* font support */
+.font-fourth{
+    font-family: var(--fourth-font);
+}
+
+/* Button */
+.button{
+    background: none;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+}
+/* Support Button */
+.button-support{
+    border: 1px solid var(--cyan);
+    color: var(--white);
+    background: var(--cyan);
+}
+
+.button-support:hover, .button-support.active{
+    background: var(--white);
+}
+
+.button-support-outline{
+    border: 2px solid var(--cyan);
+    color: var(--cyan);
+}
+
+.button-support-outline:hover, .button-support-outline.active{
+    border: 2px solid var(--cyan);
+    color: var(--white);
+    background: var(--cyan);
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+}

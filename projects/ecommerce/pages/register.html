@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="../js/fontawesome.js"></script>
+    <style>
+        .login-form{
+            padding: 1rem 1.5rem;
+            width: min(80%, 80rem);
+            height: auto;
+            border-radius: 10px;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .login-form .input{
+            border-radius: 5px;
+            padding: .5rem;
+            width: 100%;
+        }
+
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="burger" style="cursor: pointer;" onclick="navbarToggle()">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times hidden"></i>
+            </div>
+            <div class="nav-logo">
+                <a href="../index.html"><span class="logo">BizzLe.</span></a>
+            </div>
+
+            <div class="nav-links text-left">
+                <li class="search">
+                    <form action="" class="nav-search">
+                        <input type="text" name="search" id="search">
+                        <button class="button-search" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li class="nav-link"><a href="../index.html" class="font-secondary-support">Home</a></li>
+                <li class="nav-link"><a href="/projects/ecommerce/pages/_laptop.html" class="font-secondary-support">Laptop</a></li>
+                <li class="nav-link"><a href="/projects/ecommerce/pages/_computer.html" class="font-secondary-support">Computer</a></li>
+                <li class="nav-link"><a href="/projects/ecommerce/pages/_monitor.html" class="font-secondary-support">Monitor</a></li>
+                <li class="nav-link"><a href="/projects/ecommerce/pages/_accesories.html" class="font-secondary-support">Accessories</a></li>
+            </div>
+
+
+            <div class="user-control">
+                <form action="" class="nav-search">
+                    <input type="text" name="search" id="search">
+                    <button class="button-search" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <a href="#" class="font-support"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/projects/ecommerce/pages/login.html" class="font-support"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+
+        <div class="container bg-black-500">
+            <div class="content">
+                <form action="#" class="login-form bg-black">
+                    <h1 class="text-secondary">Sign Up</h1>
+                    <div class="grid col-3 gap-1 text-left">
+                        <div class="text-left">
+                            <label for="firstname" class="text-secondary">First Name <span class="red">*</span></label><br>
+                            <input class="input" type="text" placeholder="First Name">
+                        </div>
+                        <div class="text-left">
+                            <label for="middlename" class="text-secondary">Middle Name</label><br>
+                            <input class="input" type="text" placeholder="Middle Name (Optional)">
+                        </div>
+                        <div class="text-left">
+                            <label for="lastname" class="text-secondary">Last Name <span class="red">*</span></label><br>
+                            <input class="input" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="grid col-3 gap-1 text-left">
+                        <div class="text-left">
+                            <label for="birthday" class="text-secondary">Birthday <span class="red">*</span></label><br>
+                            <input class="input" type="date" placeholder="Birthday">
+                        </div>
+
+                        <div class="grid col-2 gap-1">
+                            <div>
+                                <label for="age" class="text-secondary">Age</label><br>
+                                <input class="input" type="number" placeholder="Age">
+                            </div>
+                            <div>
+                                <label for="gender" class="text-secondary">Gender <span class="red">*</span></label><br>
+                                <select name="gender" id="gender" class="input">
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <div class="text-left">
+                            <label for="email" class="text-secondary">Email <span class="red">*</span></label><br>
+                            <input class="input" type="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="grid col-2 gap-1 house">
+                        <div class="grid col-2 gap-1">
+                            <div class="text-left">
+                                <label for="address1" class="text-secondary">House No.</label><br>
+                                <input class="input" type="text" placeholder="1234">
+                            </div>
+                            <div class="text-left">
+                                <label for="address1" class="text-secondary">Street<span class="red">*</span></label><br>
+                                <input class="input" type="text" placeholder="Block Street">
+                            </div>
+                        </div>
+
+                        <div class="text-left">
+                            <label for="address1" class="text-secondary">Barangay <span class="red">*</span></label><br>
+                            <input class="input" type="text" placeholder="Santo Angel Norte">
+                        </div>
+                    </div>
+
+                    <div class="grid col-3 gap-1">
+                        <div class="text-left">
+                            <label for="address1" class="text-secondary">Municipality</label><br>
+                            <input class="input" type="text" placeholder="Santa Cruz">
+                        </div>
+                        <div class="text-left">
+                            <label for="address1" class="text-secondary">Province<span class="red">*</span></label><br>
+                            <input class="input" type="text" placeholder="Laguna">
+                        </div>
+                        <div class="text-left">
+                            <label for="address1" class="text-secondary">Zip code <span class="red">*</span></label><br>
+                            <input class="input" type="text" placeholder="4009">
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <a href="/projects/ecommerce/pages/register2.html" class="button button-support" type="submit">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>                      
+        
+        <footer class="footer">
+            <h3>BizzLe. 2022</h3>
+            <h4>&copy; All right reserved.</h4>
+        </footer>
+    </div>
+
+    <script src="../js/javascript.js"></script>
+    <script>
+        function showPassword(){
+            const password = document.getElementById('password')
+
+            if (password.type === "password"){
+                password.type = "text"
+            }
+            else{
+                password.type = "password"
+            }
+        }
+    </script>
+
+    <style>
+        @media screen and (max-width: 768px) {
+            .col-3, .house{
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="/js/fontawesome.js"></script>
+    <script src="./js/myJs.js"></script>
+</head>
+<body> 
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <span class="logo">NETFLIX</span>
+            </div>                                                  
+            <div action="#" class="nav-action">
+                <button class="button sign-in">Sign In</button>
+            </div>
+        </nav>
+
+        
+        <div class="container">
+            <!-- HEAD / 1st LINE -->
+                <div class="content head">
+                    <div class="background"></div>
+                    <div class="main-content">
+                        <h1>Unlimited movies, TV<br class="space"> programmes, and more.</h1>
+                        <h2>Watch anywhere. Cancel anytime</h2>
+                        <h3>Ready to watch? Enter your mail to create or restart your membership</h3>
+                        <form action="#">
+                            <input type="email" placeholder="Email address" required>
+                            <div class="submit">
+                                <button class="button">Get Started <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <!-- END OF HEAD / 1ST LINE -->
+
+            <!-- 2nd LINE -->
+                <div class="landscape">
+                    <div class="boxes">
+                        <div class="box text">
+                            <div class="card">
+                                <h1>Enjoy on your TV.</h1>
+                                <h2>Watch on smart TVs, PlayStation, Xbox, Chromecast, 
+                                Apple TV, Blu-ray players and more.</h2>
+                            </div>
+                        </div>
+                        <div class="box image">
+                            <img class="tv" src="./img/TV2.png" alt="">
+                            <div class="video">
+                                <video src="./img/video-tv-0819.m4v"
+                                autoplay="" playsinline="" muted="" loop=""></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- END of 2nd LINE -->
+
+            <!-- 3rd LINE -->
+                <div class="landscape">
+                    <div class="boxes two">
+                        <div class="box image">
+                            <img class="phone" src="./img/mobile-0819.jpg" alt="">
+                            <div class="post download">
+                                <div class="post poster">
+                                    <img src="./img/strangerThingsPoster.png" alt="poster">
+                                </div>
+                                <div class="post title">
+                                    <div>
+                                        <h4>Stranger Things</h4>
+                                        <h4 class="download-text">Downloading...</h4>
+                                    </div>
+                                </div>
+                                <div class="post loading">
+                                    <img src="./img/loading.gif" alt="loading">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box text">
+                            <div class="card">
+                                <h1>Download your programmes to watch offline.</h1>
+                                <h2>
+                                    Save your favourites easily and always have something to watch.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- END of 3rd LINE -->
+
+            <!-- 4th LINE -->
+                <div class="landscape">
+                    <div class="boxes">
+                        <div class="box text">
+                            <div class="card">
+                                <h1>Watch everywhere.</h1>
+                                <h2>Stream unlimited films and TV programmes on your phone, 
+                                    tablet, laptop and TV without paying more.</h2>
+                            </div>
+                        </div>
+                        <div class="box image">
+                            <img class="tv" src="./img/device-pile.png" alt="">
+                            <div class="video two">
+                                <video src="./img/video-devices.m4v"
+                                autoplay="" playsinline="" muted="" loop=""></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- END of 2nd LINE -->
+
+            <!-- 5th LINE -->
+            <div class="landscape">
+                <div class="boxes two">
+                    <div class="box image">
+                        <img class="phone" src="./img/kids.png" alt="">
+                    </div>
+                    <div class="box text">
+                        <div class="card">
+                            <h1>Create profiles for children.</h1>
+                            <h2>
+                                Send children on adventures with their favourite 
+                                characters in a space made just for them – free with your membership.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END of 5th LINE -->
+
+            <!-- QUESTION LINE -->
+            <div class="questions">
+                <div class="content">
+                    <div class="title">
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                    <div class="questions-list">
+                        <div class="question closed" id="1">
+                            <button onclick="questionButton(1)">
+                                <span>What can I watch on Netflix?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>Netflix has an extensive library of feature films, documentaries,
+                                    TV programmes, anime, award-winning Netflix originals and more.
+                                    Watch as much as you want, anytime you want.</p>
+
+                                <a href="#">
+                                    <span>Check out some of our content.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="question closed"  id="2">
+                            <button class="questionButton" onclick="questionButton(2)">
+                                <span>What is Netflix?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>Netflix is a streaming service that offers a wide variety of award-winning 
+                                    TV programmes, films, anime, documentaries and more – on thousands of 
+                                    internet-connected devices.</p>
+
+                                <p>You can watch as much as you want, whenever you want, without a single 
+                                    advert – all for one low monthly price. There's always something new 
+                                    to discover, and new TV programmes and films are added every week!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="question closed"  id="3">
+                            <button class="questionButton" onclick="questionButton(3)">
+                                <span>How much does Netflix cost?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>Watch Netflix on your smartphone, tablet, smart TV, laptop or 
+                                    streaming device, all for one fixed monthly fee. Plans range 
+                                    from €7,99 to €15,99 a month. No extra costs, no contracts.</p>
+                            </div>
+                        </div>
+
+                        <div class="question closed"  id="4">
+                            <button class="questionButton" onclick="questionButton(4)">
+                                <span>Where can I watch?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>Watch anywhere, anytime. Sign in with your Netflix account to 
+                                    watch instantly on the web at netflix.com from your personal 
+                                    computer or on any internet-connected device that offers the 
+                                    Netflix app, including smart TVs, smartphones, tablets, streaming 
+                                    media players and game consoles.</p>
+                                
+                                <p>You can also download your favourite programmes with the iOS, 
+                                    Android, or Windows 10 app. Use downloads to watch while you're 
+                                    on the go and without an internet connection. 
+                                    Take Netflix with you anywhere.</p>
+                            </div>
+                        </div>
+
+                        <div class="question closed"  id="5">
+                            <button class="questionButton" onclick="questionButton(5)">
+                                <span>How do I cancel?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>Netflix is flexible. There are no annoying contracts and no commitments.
+                                    You can easily cancel your account online in two clicks. 
+                                    There are no cancellation fees – start or stop your account at any time.</p>
+                            </div>
+                        </div>
+
+                        <div class="question closed"  id="6">
+                            <button class="questionButton" onclick="questionButton(6)">
+                                <span>Is Netflix good for children?</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="card">
+                                <p>The Netflix Children's experience is included in your membership 
+                                    to give parents control while children enjoy family-friendly 
+                                    TV programmes and films in their own space.</p>
+
+                                <p>Children's profiles come with PIN-protected parental controls that 
+                                    let you restrict the maturity rating of content children can 
+                                    watch and block specific titles you don’t want children to see.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="email">
+                        <h3>Ready to watch? Enter your mail to create or restart your membership</h3>
+                        <form action="#">
+                            <input type="email" placeholder="Email address" required>
+                            <div class="submit">
+                                <button class="button">Get Started <i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF QUESTION LINE -->
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="content">
+                <div class="footer-head">
+                    <h3>Questions? Call 0800-022-5173</h3>
+                </div>
+                <div class="footer-link">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Ways to Watch</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                            <li><a href="#">Only on Netflix</a></li>
+                        </ul>
+    
+                        <ul>
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Redeem gift cards</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Speed Test</a></li>
+                        </ul>
+    
+                        <ul>
+                            <li><a href="#">Media Centre</a></li>
+                            <li><a href="#">Buy gift cards</a></li>
+                            <li><a href="#">Cookie Preferences</a></li>
+                            <li><a href="#">Legal Notices</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+USER
+firstname
+lastname
+email
+password
+address_id
+mobile
+picture
+
+ADDRESS
+street
+address line 1
+address line 2
+city
+
+PRODUCT CATEGORIES
+Monitor
+Mouse
+Keyboard
+laptop
+headset
+GPU
+
+PRODUCT DETAILS
+product_name
+product_category_id
+product_description
+product_price
+product_quantity
+product_status
+total_sales
+
+USER CART
+user_id
+product_id
+quantity
+status
+
