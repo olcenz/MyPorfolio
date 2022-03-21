@@ -351,3 +351,9 @@ footer{
         display: flex;
     }
 }
+
+@media screen and (max-width: 420px) and (max-height:900px){
+    .content section{
+        min-height: 75vh;
+    }
+}
